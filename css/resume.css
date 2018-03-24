@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-family: Muli, Futura, Helvetica, Arial, sans-serif, '微軟正黑體';
+  padding-top: 54px;
+  color: #868e96;
+/*  background-color: #EDEEF0;*/
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Muli,sans-serif,'微軟正黑體';
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  
+    font-size: 38px;
+}
+
+.subheading {
+  font-weight: 800;
+  font-family: Helvetica, Arial, sans-serif,'微軟正黑體';
+  font-size: 1.35rem;
+}
+
+.list-social-icons a {
+  color: #495057;
+}
+
+.list-social-icons a:hover {
+  color: #BD5D38;
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: #aaa !important;
+}
+.about-width{
+}
+#about{
+  overflow: hidden;
+}
+#about .resumesection{}
+#about .my-auto{
+    width: 100%;
+    height: 100vh;
+  background-image: url(../img/n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: zoomin 20s ease-in infinite;
+  overflow: hidden;
+
+  /*  transition: all 0.5s ease-in-out;*/
+}
+#about .about-width{
+  position: absolute;
+  top: 20%;
+  left: 19rem;
+
+}
+#about{
+  color: #fff;
+  font-weight: 0 !important;
+
+}
+#about h2{
+  font-family:  inherit;
+  font-size: 45px;
+  color: #fff;
+
+}
+#about .sub-desc{
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+#about .sub-info{
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+.sub-info .sub-info-icon{
+  border-radius: 100%;
+  border: 1px white solid;
+  padding: 10px;
+  margin-right:15px;
+}
+.sub-info .sub-info-icon.sub-info-icon-mail{
+
+  margin-left:15px;
+}
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+section#about.resume-section{
+
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #FFFeeF !important;
+}
+
+.text-primary {
+  color: #ff7743 !important;
+}
+.text-primary-cn{
+  font-weight: 200;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+
+
+.box-item img{
+  width: 100%;
+}
+
+/* Zoom in Keyframes */
+
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}/*End of Zoom out Keyframes */
